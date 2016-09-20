@@ -10,11 +10,16 @@ make sure backup iptables, before use this.
 
 ##usage
 showing sorted result:
+<pre>
 	php iptables-natsort.php
+</pre>
 saving sorted result:
+<pre>
 	php iptables-natsort.php > /etc/sysconfig/iptables
+</pre>
 
 ##sample result
+<pre>
 before:
 	*filter
 	:INPUT ACCEPT
@@ -33,3 +38,4 @@ after:
 	-A INPUT -s 2.201.0.0/16 -j DROP
 	-A INPUT -s 4.3.2.0/21 -j DROP
 	COMMIT
+</pre>
