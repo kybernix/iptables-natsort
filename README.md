@@ -19,8 +19,8 @@ saving sorted result:
 </pre>
 
 ##sample result
-<pre>
 before:
+<pre>
 	*filter
 	:INPUT ACCEPT
 	:OUTPUT ACCEPT
@@ -29,7 +29,10 @@ before:
 	-A INPUT -s 2.201.0.0/16 -j DROP
 	-A INPUT -s 2.102.0.0/15 -j DROP
 	COMMIT
+</pre>
+
 after:
+<pre>
 	*filter
 	:INPUT ACCEPT
 	:OUTPUT ACCEPT
