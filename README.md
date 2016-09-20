@@ -8,7 +8,7 @@ iptables entity natsort, usage is same as iptables-save.
 
 ##notice
 - make sure backup iptables, before use this.<br />
-- ACCEPT rules are treated as top priority.
+- "ACCEPT-rules" are treated top priority.
 
 ##usage
 showing sorted result:
