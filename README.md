@@ -1,6 +1,6 @@
 # iptables-natsort
 
-iptables entity natsort, usage is same as iptables-save.
+iptables entity natsort, usage is similar to iptables-save command.
 
 ##requires
 - php5~<br />
