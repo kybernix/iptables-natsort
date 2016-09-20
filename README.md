@@ -4,9 +4,11 @@ iptables entity natsort, usage is same as iptables-save.
 
 ##requires
 -php5~
+-iptables
 
 ##notice
-make sure backup iptables, before use this.
+-make sure backup iptables, before use this.
+-ACCEPT rules are treated as top priority.
 
 ##usage
 showing sorted result:
@@ -28,8 +30,6 @@ before:
 	-A INPUT -s 4.3.2.0/21 -j DROP
 	-A INPUT -s 2.201.0.0/16 -j DROP
 	-A INPUT -s 2.102.0.0/15 -j DROP
-	-A INPUT -s 2001:102::ba:2:3a/128 -j DROP
-	-A INPUT -s 2001:102::1a:2:3a/128 -j DROP
 	COMMIT
 </pre>
 
@@ -42,7 +42,5 @@ after:
 	-A INPUT -s 2.102.0.0/15 -j DROP
 	-A INPUT -s 2.201.0.0/16 -j DROP
 	-A INPUT -s 4.3.2.0/21 -j DROP
-	-A INPUT -s 2001:102::1a:2:3a/128 -j DROP
-	-A INPUT -s 2001:102::ba:2:3a/128 -j DROP
 	COMMIT
 </pre>
