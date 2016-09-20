@@ -56,7 +56,7 @@ foreach( $ls as &$l )
 				if( count( $accepts ) > 0 )
 				{
 					// write
-					foreach( $collection as &$c )
+					foreach( $accepts as &$c )
 					{
 						echo( "{$c}\n" );	
 					}
