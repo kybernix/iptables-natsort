@@ -3,12 +3,12 @@
 iptables entity natsort, usage is same as iptables-save.
 
 ##requires
--php5~
--iptables
+- php5~<br />
+- iptables
 
 ##notice
--make sure backup iptables, before use this.
--ACCEPT rules are treated as top priority.
+- make sure backup iptables, before use this.<br />
+- ACCEPT rules are treated as top priority.
 
 ##usage
 showing sorted result:
