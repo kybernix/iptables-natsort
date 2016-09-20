@@ -9,6 +9,7 @@
 //
 
 // * config
+// - absolute path to iptables file.
 $fn = "/etc/sysconfig/iptables";
 
 
